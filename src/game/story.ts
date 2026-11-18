@@ -1,42 +1,46 @@
-// PROTOTYPE - NOT FOR PRODUCTION
-// Question: 선택한 대사에 상대가 바로 반응하는 짧은 연애 장면이 다시 해서 다른 엔딩을 보고 싶다를 만드는가?
-// Date: 2026-11-18
 // The story as data. A line is [speaker, text, face?]; speaker null is narration.
 // Commands: {bg}, {show, face, pos}, {hide}, {hideAll}, {day}, {goto}, {if: flag, then, else},
 // {choice: [{t, h: {who: hearts}, set: [flags], face: {who: face}, reply: [lines], go}]},
 // {pick: day} (who to meet after school), {invite: true} (the festival), {ending: id}.
-// Heart amounts are the scene's writing; the festival bar is config.js confess_threshold.
-
-window.NAMES = {
+// Heart amounts are the scene's writing; the festival bar is data/config.json confess_threshold.
+import type { CastId, Option, SpeakerId, Story } from './types';
+/** Each speaker's name: in full on the name tag, short by the hearts. */
+export const NAMES: Record<SpeakerId, { full: string; short?: string; cast?: boolean }> = {
   hana: { full: '하나', short: '하나', cast: true },
   serin: { full: '세린 선배', short: '세린', cast: true },
   yuri: { full: '유리', short: '유리', cast: true },
   teacher: { full: '담임 선생님' },
   me: { full: '나' },
 };
-window.COLORS = { hana: '#e2809a', serin: '#7d63c4', yuri: '#e8962a', teacher: '#7a8a99', me: '#5a7fb5' };
-window.HUD_INK = { hana: '#a83e5c', serin: '#4f3a96', yuri: '#9a5a08' }; // darker, for small text on cream
-window.VOICES = { // each speaker's blip as the letters appear
+/** Each speaker's name-tag colour. */
+export const COLORS: Record<SpeakerId, string> = { hana: '#e2809a', serin: '#7d63c4', yuri: '#e8962a', teacher: '#7a8a99', me: '#5a7fb5' };
+/** Darker ink for small names on the cream hearts panel. */
+export const HUD_INK: Record<CastId, string> = { hana: '#a83e5c', serin: '#4f3a96', yuri: '#9a5a08' }; // darker, for small text on cream
+/** Each speaker's blip as the letters appear. */
+export const VOICES: Record<SpeakerId, { f: number; type: OscillatorType; vol: number }> = { // each speaker's blip as the letters appear
   hana: { f: 560, type: 'sine', vol: 0.09 },
   serin: { f: 360, type: 'triangle', vol: 0.11 },
   yuri: { f: 760, type: 'square', vol: 0.035 },
   teacher: { f: 210, type: 'triangle', vol: 0.1 },
   me: { f: 430, type: 'sine', vol: 0.07 },
 };
-window.DAYS = {
+/** Each day's label and its card. */
+export const DAYS: Record<number, { left: string; card: string }> = {
   1: { left: '축제까지 사흘', card: '전학 첫날 · 축제까지 사흘' },
   2: { left: '축제까지 이틀', card: '축제까지 이틀' },
   3: { left: '축제 전날', card: '축제까지 하루' },
   4: { left: '벚꽃 축제', card: '벚꽃 축제의 밤' },
 };
-window.ENDINGS = {
+/** The four endings. */
+export const ENDINGS: Record<string, { title: string; who: string; line: string; bg: string }> = {
   hana: { title: '칠 년 만의 벚꽃', who: '하나 엔딩', line: '타임캡슐 속 편지는, 이제 직접 전해졌다.', bg: 'festival' },
   serin: { title: '회장님의 휴일', who: '세린 엔딩', line: '순찰 완장은 오늘 밤, 주머니 속에.', bg: 'festival' },
   yuri: { title: '시끄러운 고백', who: '유리 엔딩', line: '말린 꽃잎의 소원이 이루어졌다.', bg: 'festival' },
   alone: { title: '혼자 보는 벚꽃', who: '혼자 엔딩', line: '다음 봄에는, 조금 더 용기를.', bg: 'festival' },
 };
 
-window.STORY_PICKS = {
+/** The after-school pick on days 2 and 3. */
+export const STORY_PICKS: Record<number, Option[]> = {
   2: [
     { t: '하나를 만나러 교실에 남는다', sub: '교실', go: 'hana2' },
     { t: '세린 선배를 찾아 옥상에 간다', sub: '옥상', go: 'serin2' },
@@ -48,14 +52,16 @@ window.STORY_PICKS = {
     { t: '유리의 비밀 장소에 따라간다', sub: '벚꽃길', go: 'yuri3' },
   ],
 };
-window.STORY_INVITE = [
+/** The festival invite. */
+export const STORY_INVITE: Option[] = [
   { t: '하나에게 같이 걷자고 한다', invite: 'hana' },
   { t: '세린 선배에게 같이 걷자고 한다', invite: 'serin' },
   { t: '유리에게 같이 걷자고 한다', invite: 'yuri' },
   { t: '혼자 걷는다', go: 'alone' },
 ];
 
-window.STORY = {
+/** The scenes. */
+export const STORY: Story = {
   start: [
     { day: 1 },
     { bg: 'road' },

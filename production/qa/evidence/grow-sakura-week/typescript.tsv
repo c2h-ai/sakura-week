@@ -1,0 +1,152 @@
+browser	/Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+time	2026-11-18 09:55:43
+render	cheap
+ua	HeadlessChrome/157.0.0.0
+scene	0	title
+state	0	title	{"t":0,"frames":[{"path":["start"],"i":0}],"hearts":{"hana":0,"serin":0,"yuri":0},"flags":[],"met":[],"bg":"road","shown":[],"day":0,"card":null,"line":null,"reveal":0,"choice":null,"sel":0,"log":[],"
+scene	1	play
+state	1	play	{"t":0,"frames":[{"path":["start"],"i":1}],"hearts":{"hana":0,"serin":0,"yuri":0},"flags":[],"met":[],"bg":"road","shown":[],"day":1,"card":{"day":1,"t":0},"line":null,"reveal":0,"choice":null,"sel":0
+playinput	154	Space
+saved	264	localstorage	sakura-week.save
+frame	3481	afd52159
+frame	3482	5f15dfae
+frame	3483	d94dda25
+frame	3484	69eafb8a
+frame	3485	235a32a7
+frame	3486	41cc7517
+frame	3487	8c221cc8
+frame	3488	85a04452
+frame	3489	1f8e35b3
+frame	3490	9f28543
+frame	3491	6bcf3a5b
+frame	3492	42dd6aa8
+frame	3493	de3f2d39
+frame	3494	8a358d72
+frame	3495	49d4849f
+frame	3496	b61da4e5
+frame	3497	7dad425d
+frame	3498	301a0b31
+frame	3499	51ded377
+frame	3500	39715ea7
+frame	3501	205747f1
+frame	3502	d4f60aa0
+frame	3503	f79a7d9
+frame	3504	3c616f47
+frame	3505	a33f50a
+frame	3506	30ee4702
+frame	3507	b28cb165
+frame	3508	4ea815cc
+frame	3509	f0599283
+frame	3510	61ea1421
+frame	3511	bdaf7beb
+frame	3512	e909bc07
+frame	3513	1e8ff998
+frame	3514	28ce5506
+frame	3515	ad08c1a7
+frame	3516	884fd49b
+frame	3517	2f1cbb90
+frame	3518	7762bdd
+frame	3519	d4195d25
+frame	3520	7b14f6fe
+frame	3521	60380a63
+frame	3522	487da8b8
+frame	3523	3f17595a
+frame	3524	da858750
+frame	3525	ac1f812f
+frame	3526	4be9ec6c
+frame	3527	d6094c42
+frame	3528	c12e373e
+frame	3529	124f2797
+frame	3530	bdd3fbce
+frame	3531	51d60641
+frame	3532	c089f95e
+frame	3533	9665f07
+frame	3534	b5c15839
+frame	3535	964c5764
+frame	3536	e3918a66
+frame	3537	950943a9
+frame	3538	45259548
+frame	3539	8248e02a
+frame	3540	e2bbd3c7
+frame	3541	5d84764e
+frame	3542	868fe5c7
+frame	3543	b7553683
+frame	3544	5474549e
+frame	3545	4dbb6a6d
+frame	3546	5375751
+frame	3547	1c7750ce
+frame	3548	95f0b0fa
+frame	3549	2b163c3e
+frame	3550	637a516c
+frame	3551	1198e326
+frame	3552	548e7e73
+frame	3553	de417618
+frame	3554	7bf7a1b4
+frame	3555	87b57f2f
+frame	3556	6efa937
+frame	3557	d69b6b14
+frame	3558	a7f3e2a7
+frame	3559	c0a7df14
+frame	3560	91161094
+frame	3561	65522f2f
+frame	3562	d49d58a8
+frame	3563	c0c62a04
+frame	3564	69ae3ffe
+frame	3565	f4b27d86
+frame	3566	fdcf5e58
+frame	3567	d0b34db5
+frame	3568	6f1c8860
+frame	3569	dd68a183
+frame	3570	d0c5985a
+frame	3571	2c56c9fb
+frame	3572	fac84b63
+frame	3573	95bb7c13
+frame	3574	d5291ee0
+frame	3575	2b02ca26
+frame	3576	e020669c
+frame	3577	12f970b6
+frame	3578	e56d58f5
+frame	3579	4f05de86
+frame	3580	5713fbcd
+frame	3581	ae0d1140
+frame	3582	6f627189
+frame	3583	5e60d966
+frame	3584	f48773f8
+frame	3585	51066380
+frame	3586	1d388d59
+frame	3587	980a8633
+frame	3588	df408d29
+frame	3589	f3c26ec7
+frame	3590	bf768903
+frame	3591	92c6941d
+frame	3592	cc5af73c
+frame	3593	be66c5b1
+frame	3594	c2c384d6
+frame	3595	e3d3bad3
+frame	3596	34e2957b
+frame	3597	6d09dab7
+frame	3598	94505ff6
+frame	3599	b5ce9875
+frame	3600	8c6738f1
+state	3600	play	{"t":59.98,"frames":[{"path":["day3"],"i":10},{"path":["day3",9,"choice",0,"reply"],"i":1}],"hearts":{"hana":5,"serin":3,"yuri":1},"flags":["hana_remember","yuri_fate","serin_polite","hana_capsule"],"
+digits	log	20px "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif	proportional	5.46
+digits	log	bold 19px "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif	proportional	5.149
+digits	log	bold 64px "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif	proportional	17.344
+digits	log	bold 22px "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif	proportional	5.962
+digits	log	29px "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif	proportional	7.917
+loop	log	none	no loop() step was marked
+first	log	none	no state.beat
+pressure	none	the game set no number state.margin in play
+steptime	3600	0.004	0.500
+frametime	60	11.1	24.5	1500	2	0
+done	3600	play	stop	60.0	3414
+measured	1280x720
+text	play	canvas	30,26,61,42	22.5	5.48	inside	하나
+text	play	canvas	30,64,60,80	22.5	8.07	inside	세린
+text	play	canvas	31,102,59,118	22.5	5.04	inside	유리
+text	play	canvas	1077,23,1206,40	23.7	8.66	inside	3일차 · 축제 전날
+text	play	canvas	138,507,226,528	30.0	4.72	inside	세린 선배
+text	play	canvas	131,560,389,585	35.6	8.77	inside	고마워. 역시 믿을 만해.
+screen	3600	play	75aaaa3f	drawn
+uncaught	0
+shot	/Users/jinseungim/development/dev-game/new-game4/production/qa/evidence/grow-sakura-week/typescript.png	1021936

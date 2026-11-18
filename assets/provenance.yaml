@@ -105,7 +105,7 @@
   model: "Codex built-in image_gen"
   date: 2026-11-18
   ships: true
-- path: src/images.js
+- path: src/images.ts
   origin: code
   tool: "Pillow script: the .webp files as data URIs"
   date: 2026-11-18
