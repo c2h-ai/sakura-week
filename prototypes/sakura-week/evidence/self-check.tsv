@@ -1,0 +1,40 @@
+time	2026-11-18 09:43:17
+keep	lines	0	pinned	0
+checklist	L1	unlisted	-	Look: 수채풍 애니메이션 셀화. 부드러운 파스텔 배경(교실·옥상·벚꽃길·축제 야경) 위에 허리 위 캐릭터 일러스트, 표정 3~4종(기본·웃음·부끄러움·시무룩). 팔레트: 벚꽃 분홍(하트·강조), 크림(대사창), 저녁 남색(축제 밤). 시그니처: 화면 위로 천천히 흩날리는 꽃잎. 이미지는 **Codex CLI로 생성**해 `assets/`에 넣는다. every figure drawn, no emoji, no plain circles. *(provisional; 생성 도구는 you said)*	
+checklist	L2	unlisted	-	References: Doki Doki Literature Club 초반(학교 연애물 구성), Monster Prom(누구와 시간을 보낼지 고르는 구조) *(guessed)*	
+checklist	L3	unlisted	-	View: 2D · Camera: static, 장면마다 배경이 바뀜	
+checklist	F1	unlisted	-	공략 대상 3명(상냥한 소꿉친구, 쿨한 선배, 엉뚱한 후배), 각자 하트와 표정 3~4종 *(provisional)*	
+checklist	F2	unlisted	-	1일차 소개 → 2~3일차 방과 후 선택(3명 × 2일) → 4일차 축제 *(provisional)*	
+checklist	F3	unlisted	-	선택이 기억됨: 앞에서 한 말을 뒤 장면에서 캐릭터가 꺼낸다	
+checklist	F4	unlisted	-	엔딩 4개(캐릭터별 3 + 혼자 1), 엔딩 화면에 이름과 "n/4"	
+checklist	F5	unlisted	-	읽기 화면: 글자 속도 설정, L 로그, 이름표, 캐릭터별 대사 블립 소리	
+checklist	F6	unlisted	-	선택지마다 자동 저장, 일시정지에서 저장·이어하기	
+checklist	F7	unlisted	-	Codex CLI로 만든 배경 4장, 캐릭터 3명 표정 일러스트	
+checklist	S1	unlisted	-	그림은 코덱스 cli로 생성 · in the slice	
+checklist	M1	unlisted	-	제목 화면에서 시작을 누르면 벚꽃길 배경에 첫 대사가 한 글자씩 나온다.	
+checklist	M2	unlisted	-	담임이 반을 소개하며 세 사람이 차례로 등장하고, 첫 선택지(소꿉친구에게 "오랜만이야" / "누구…였지?")를 고르면 즉시 얼굴이 바뀌고 하트가 흔들리며 다음 대사가 그 말에 답한다.	
+checklist	M3	unlisted	-	이어서 방과 후 화면에서 세 사람 중 한 명을 고른다.	
+checklist	C1	unlisted	-	게임 오버는 없다.	
+checklist	C2	unlisted	-	2일차부터 한 사람을 꾸준히 만나지 않으면 하트가 축제 고백 기준에 못 미친다.	
+checklist	C3	unlisted	-	3일차엔 한 사람에게 좋은 말이 다른 사람에겐 서운한 말이 되는 선택지가 나온다.	
+checklist	C4	unlisted	-	마지막 날 하트가 기준을 넘은 사람만 고백을 받아준다.	
+checklist	C5	unlisted	-	*(provisional)*	
+browser	HeadlessChrome/157.0.0.0
+scene	play	0	title
+scene	play	1	play
+saved	play	440	localstorage	sakura-week.save
+digits	log	20px "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif	proportional	5.46
+digits	log	bold 19px "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif	proportional	5.149
+digits	log	bold 64px "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif	proportional	17.344
+digits	log	bold 22px "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif	proportional	5.962
+measure	step-time	play	0.008	0.400	520
+lane	play	stop	8.7	153
+uncaught	play	0
+text	play	canvas	30,26,61,42	22.5	2.24	inside	하나
+text	play	canvas	283,1,304,16	27.5	1.25	inside	+2
+text	play	canvas	1062,23,1220,40	23.7	9.10	inside	1일차 · 축제까지 사흘
+text	play	canvas	139,507,179,528	30.0	2.70	inside	하나
+text	play	canvas	131,560,496,586	35.6	9.36	inside	정말? 기억해 줬구나… 다행이다.
+screen	play	drawn
+shot	play	prototypes/sakura-week/evidence/play.png
+responds	changed	154

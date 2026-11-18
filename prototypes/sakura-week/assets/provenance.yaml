@@ -1,0 +1,112 @@
+# Where each file in assets/ and vendor/ came from, one entry per file. The field names are the
+# provenance record's, so the entries carry over when the game grows.
+# - path: assets/hit.wav      # relative to this game's folder
+#   origin: ai                # ai | bought | cc0 | you | outsourced | template | plugin | licensed | code | unknown
+#   tool: "what made or fetched it: the generator, or the script for code"
+#   model: "the model ID, when a model made it or an AI wrote its code"
+#   source: {vendor: "who made or sold it", product: "its name", url: "where from"}   # a download
+#   licence: {id: CC0-1.0}    # a download: the SPDX id where one exists
+#   date: 2026-01-31
+#   ships: true               # false for a file only the build uses
+#   placeholder: true         # until it is replaced; leave the line out otherwise
+- path: assets/bg_classroom.webp
+  origin: ai
+  tool: "Codex CLI 0.169.0 image generation (codex exec); characters chroma-keyed and resized with Pillow"
+  model: "Codex built-in image_gen"
+  date: 2026-11-18
+  ships: true
+- path: assets/bg_festival.webp
+  origin: ai
+  tool: "Codex CLI 0.169.0 image generation (codex exec); characters chroma-keyed and resized with Pillow"
+  model: "Codex built-in image_gen"
+  date: 2026-11-18
+  ships: true
+- path: assets/bg_road.webp
+  origin: ai
+  tool: "Codex CLI 0.169.0 image generation (codex exec); characters chroma-keyed and resized with Pillow"
+  model: "Codex built-in image_gen"
+  date: 2026-11-18
+  ships: true
+- path: assets/bg_rooftop.webp
+  origin: ai
+  tool: "Codex CLI 0.169.0 image generation (codex exec); characters chroma-keyed and resized with Pillow"
+  model: "Codex built-in image_gen"
+  date: 2026-11-18
+  ships: true
+- path: assets/hana_happy.webp
+  origin: ai
+  tool: "Codex CLI 0.169.0 image generation (codex exec); characters chroma-keyed and resized with Pillow"
+  model: "Codex built-in image_gen"
+  date: 2026-11-18
+  ships: true
+- path: assets/hana_neutral.webp
+  origin: ai
+  tool: "Codex CLI 0.169.0 image generation (codex exec); characters chroma-keyed and resized with Pillow"
+  model: "Codex built-in image_gen"
+  date: 2026-11-18
+  ships: true
+- path: assets/hana_sad.webp
+  origin: ai
+  tool: "Codex CLI 0.169.0 image generation (codex exec); characters chroma-keyed and resized with Pillow"
+  model: "Codex built-in image_gen"
+  date: 2026-11-18
+  ships: true
+- path: assets/hana_shy.webp
+  origin: ai
+  tool: "Codex CLI 0.169.0 image generation (codex exec); characters chroma-keyed and resized with Pillow"
+  model: "Codex built-in image_gen"
+  date: 2026-11-18
+  ships: true
+- path: assets/serin_happy.webp
+  origin: ai
+  tool: "Codex CLI 0.169.0 image generation (codex exec); characters chroma-keyed and resized with Pillow"
+  model: "Codex built-in image_gen"
+  date: 2026-11-18
+  ships: true
+- path: assets/serin_neutral.webp
+  origin: ai
+  tool: "Codex CLI 0.169.0 image generation (codex exec); characters chroma-keyed and resized with Pillow"
+  model: "Codex built-in image_gen"
+  date: 2026-11-18
+  ships: true
+- path: assets/serin_sad.webp
+  origin: ai
+  tool: "Codex CLI 0.169.0 image generation (codex exec); characters chroma-keyed and resized with Pillow"
+  model: "Codex built-in image_gen"
+  date: 2026-11-18
+  ships: true
+- path: assets/serin_shy.webp
+  origin: ai
+  tool: "Codex CLI 0.169.0 image generation (codex exec); characters chroma-keyed and resized with Pillow"
+  model: "Codex built-in image_gen"
+  date: 2026-11-18
+  ships: true
+- path: assets/yuri_happy.webp
+  origin: ai
+  tool: "Codex CLI 0.169.0 image generation (codex exec); characters chroma-keyed and resized with Pillow"
+  model: "Codex built-in image_gen"
+  date: 2026-11-18
+  ships: true
+- path: assets/yuri_neutral.webp
+  origin: ai
+  tool: "Codex CLI 0.169.0 image generation (codex exec); characters chroma-keyed and resized with Pillow"
+  model: "Codex built-in image_gen"
+  date: 2026-11-18
+  ships: true
+- path: assets/yuri_sad.webp
+  origin: ai
+  tool: "Codex CLI 0.169.0 image generation (codex exec); characters chroma-keyed and resized with Pillow"
+  model: "Codex built-in image_gen"
+  date: 2026-11-18
+  ships: true
+- path: assets/yuri_shy.webp
+  origin: ai
+  tool: "Codex CLI 0.169.0 image generation (codex exec); characters chroma-keyed and resized with Pillow"
+  model: "Codex built-in image_gen"
+  date: 2026-11-18
+  ships: true
+- path: assets/images.js
+  origin: code
+  tool: "Pillow script: the .webp files as data URIs"
+  date: 2026-11-18
+  ships: true

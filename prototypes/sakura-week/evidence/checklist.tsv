@@ -1,0 +1,19 @@
+L1	pass	evidence/play.png	watercolor anime cel sprites over pastel backgrounds, 4 faces each (figures.png, ending.png), pink hearts, cream box, navy festival night, petals drawn in code (index.html drawPetals); images made with Codex CLI
+L2	pass	story.js:39	school romance opening and the who-to-spend-time-with pick per day, in its own scenes and characters
+L3	pass	evidence/ending.png	2D static camera; background changes per scene (road, classroom, rooftop, festival)
+F1	pass	evidence/figures.png	하나 (childhood friend), 세린 선배 (cool senior), 유리 (quirky junior), each with a heart row and neutral/happy/shy/sad faces
+F2	pass	story.js:102	day 1 intro, after-school pick on days 2 and 3 among three, festival on day 4; a run reached the day 4 invite (scratch shot)
+F3	pass	story.js:112	flags set by choices (hana_remember, hana_capsule, serin_bold, serin_help, yuri_fate, yuri_petal) change later lines and the endings
+F4	pass	evidence/ending.png	four endings; the end screen names it and shows 엔딩 1 / 4 with the unfound ones as ???
+F5	pass	index.html:493	speed setting in pause (느림/보통/빠름/즉시), L opens the log scene, name tag in speaker colour, per-speaker blip tone at index.html:496 (the sound itself not heard)
+F6	pass	index.html:235	save(false) at every choice; the check saw localStorage sakura-week.save; pause 저장하기 and title 이어하기 load it
+F7	pass	evidence/figures.png	4 backgrounds and 12 expression sprites from Codex CLI, in assets/ with provenance
+S1	pass	assets/provenance.yaml	every picture made with Codex CLI image generation
+M1	pass	evidence/play.png	Enter on the title starts on the cherry blossom road; letters appear at text_speed (index.html:493)
+M2	pass	evidence/play.png	first choice to Hana (오랜만이야 / 누구였지) switches her face to shy and floats +2 by her shaking hearts, and her next line answers it; the order differs a little: Hana's choice comes on the road before the teacher's class intro
+M3	pass	story.js:39	after day 1, the after-school screen offers the three
+C1	pass	index.html:259	no game over: every path reaches an ending via finish()
+C2	pass	config.js:15	threshold 9: one meeting with every best answer plus the lunch pick gives at most 8, so a yes needs both after-school days with that person
+C3	pass	story.js:181	day 3 lunch: helping one costs the other two a heart each, faces turn sad
+C4	pass	index.html:250	an invite goes to end_<who> only when hearts >= confess_threshold, else decline_<who> then the alone ending
+C5	pass	brief.md:27	the provisional mark on the Challenge paragraph, not a rule of its own

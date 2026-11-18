@@ -1,0 +1,115 @@
+# The one-shot's small check (check-run/1).
+# Written by one-shot-check.sh --record: the results are /prototype's reading of
+# evidence/self-check.tsv; never edited by hand.
+kind: check-run/1
+engine: web
+browser: "HeadlessChrome/157.0.0.0"
+time: "2026-11-18 09:43:17"
+checks:
+  - id: boots
+    result: pass
+    evidence:
+      - "evidence/self-check.tsv"
+  - id: shot
+    result: pass
+    evidence:
+      - "evidence/play.png"
+  - id: outlines
+    result: pass
+    evidence:
+      - "evidence/figures.png"
+  - id: brief-words
+    result: pass
+    evidence:
+      - "evidence/brief-words.tsv"
+  - id: emoji
+    result: pass
+    evidence:
+      - "evidence/self-check.tsv"
+  - id: nearest-game
+    result: pass
+    evidence:
+      - "evidence/nearest-game.txt"
+brief_checklist:
+  - id: L1
+    result: pass
+    evidence: "evidence/play.png"
+    item: "Look: 수채풍 애니메이션 셀화. 부드러운 파스텔 배경(교실·옥상·벚꽃길·축제 야경) 위에 허리 위 캐릭터 일러스트, 표정 3~4종(기본·웃음·부끄러움·시무룩). 팔레트: 벚꽃 분홍(하트·강조), 크림(대사창), 저녁 남색(축제 밤). 시그니처: 화면 위로 천천히 흩날리는 꽃잎. 이미지는 **Codex CLI로 생성**해 `assets/`에 넣는다. every figure drawn, no emoji, no plain circles. *(provisional; 생성 도구는 you said)*"
+  - id: L2
+    result: pass
+    evidence: "story.js:39"
+    item: "References: Doki Doki Literature Club 초반(학교 연애물 구성), Monster Prom(누구와 시간을 보낼지 고르는 구조) *(guessed)*"
+  - id: L3
+    result: pass
+    evidence: "evidence/ending.png"
+    item: "View: 2D · Camera: static, 장면마다 배경이 바뀜"
+  - id: F1
+    result: pass
+    evidence: "evidence/figures.png"
+    item: "공략 대상 3명(상냥한 소꿉친구, 쿨한 선배, 엉뚱한 후배), 각자 하트와 표정 3~4종 *(provisional)*"
+  - id: F2
+    result: pass
+    evidence: "story.js:102"
+    item: "1일차 소개 → 2~3일차 방과 후 선택(3명 × 2일) → 4일차 축제 *(provisional)*"
+  - id: F3
+    result: pass
+    evidence: "story.js:112"
+    item: "선택이 기억됨: 앞에서 한 말을 뒤 장면에서 캐릭터가 꺼낸다"
+  - id: F4
+    result: pass
+    evidence: "evidence/ending.png"
+    item: "엔딩 4개(캐릭터별 3 + 혼자 1), 엔딩 화면에 이름과 \"n/4\""
+  - id: F5
+    result: pass
+    evidence: "index.html:493"
+    item: "읽기 화면: 글자 속도 설정, L 로그, 이름표, 캐릭터별 대사 블립 소리"
+  - id: F6
+    result: pass
+    evidence: "index.html:235"
+    item: "선택지마다 자동 저장, 일시정지에서 저장·이어하기"
+  - id: F7
+    result: pass
+    evidence: "evidence/figures.png"
+    item: "Codex CLI로 만든 배경 4장, 캐릭터 3명 표정 일러스트"
+  - id: S1
+    result: pass
+    evidence: "assets/provenance.yaml"
+    item: "그림은 코덱스 cli로 생성 · in the slice"
+  - id: M1
+    result: pass
+    evidence: "evidence/play.png"
+    item: "제목 화면에서 시작을 누르면 벚꽃길 배경에 첫 대사가 한 글자씩 나온다."
+  - id: M2
+    result: pass
+    evidence: "evidence/play.png"
+    item: "담임이 반을 소개하며 세 사람이 차례로 등장하고, 첫 선택지(소꿉친구에게 \"오랜만이야\" / \"누구…였지?\")를 고르면 즉시 얼굴이 바뀌고 하트가 흔들리며 다음 대사가 그 말에 답한다."
+  - id: M3
+    result: pass
+    evidence: "story.js:39"
+    item: "이어서 방과 후 화면에서 세 사람 중 한 명을 고른다."
+  - id: C1
+    result: pass
+    evidence: "index.html:259"
+    item: "게임 오버는 없다."
+  - id: C2
+    result: pass
+    evidence: "config.js:15"
+    item: "2일차부터 한 사람을 꾸준히 만나지 않으면 하트가 축제 고백 기준에 못 미친다."
+  - id: C3
+    result: pass
+    evidence: "story.js:181"
+    item: "3일차엔 한 사람에게 좋은 말이 다른 사람에겐 서운한 말이 되는 선택지가 나온다."
+  - id: C4
+    result: pass
+    evidence: "index.html:250"
+    item: "마지막 날 하트가 기준을 넘은 사람만 고백을 받아준다."
+  - id: C5
+    result: pass
+    evidence: "brief.md:27"
+    item: "*(provisional)*"
+measures:
+  - id: step-time
+    value: 0.400
+    unit: ms
+    by: browser
+    detail: "mean 0.008 ms, slowest 0.400 ms, 520 steps"
